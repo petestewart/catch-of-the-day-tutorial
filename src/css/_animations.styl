@@ -1,0 +1,36 @@
+/*
+  Possible Animations:
+  exit
+  exit
+  appear Must set transitionAppear={true} on animation component
+*/
+
+.order-exit
+  transform: translateX(-120%)
+  transition .5s
+  max-height: 0
+  padding 0 !important 
+  &.order-exit-active
+    transform: translateX(0)
+    max-height: 60px
+    padding: 2rem 0 !important
+.order-exit
+  transform: translateX(0)
+  transition .5s
+  &.order-exit-active
+    transform: translateX(120%)
+
+.count-exit
+  transform: translateY(100%)
+  transition .5s
+  &.count-exit-active
+    transform: translateY(0)
+
+.count-exit
+  transform: translateY(0)
+  transition .5s
+  position absolute
+  left 0
+  bottom 0
+  &.count-exit-active
+    transform: translateY(-100%)
